@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>释结解绑🪢一别两宽👋🏻</title>
+</head>
+<body>
+	<div style="width:100%;height:32px;float:left;">
+		<div id="back" style="width:41px;height:8px;float:left;">
+			[<]
+		</div>
+		<script>
+			var btn = document.getElementById("back");
+			btn.onclick = function (event) {
+				history.back();
+			}
+		</script>
+		<a href="./index.html">首页</a>>
+		<a href="./登录后.html">登录</a>
+	</div>
+	<hr />
+	
+	<div class="tiaozhuan">跳转A站 <a href="https://www.acfun.cn/">跳转A站</a></div>
+	<div class="tiaozhuan">跳转B站 <a href="https://bilibili.com">跳转B站</a></div>
+	<div class="tiaozhuan">跳转C站 <a href="https://csdn.net">跳转C站</a></div>
+
+	<button id="cc">点击我，弹出接收信息</button>
+	<script>
+		var name = location.search;
+		// var name = decodeURI(document.URL)//获取到编码的数据并进行解码，推荐
+		//获取到的数据其实是  ?uname=zhangsan'
+		//下面是对数据进行处理
+		name=name.slice(name.indexOf("user=")+"user=".length)
+		var button = document.getElementById("cc");
+		button.onclick = function () {
+			alert("你好"+name)
+		}
+	</script>
+</body>
+</html>
